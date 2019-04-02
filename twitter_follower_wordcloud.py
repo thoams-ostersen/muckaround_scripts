@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 This script generates a wordcloud using words extracted from twitter
-bios. Bios are taken followers of a target account, thus providing a 
+bios. Bios are taken from followers of a target account, thus providing a 
 crude means of qualitatively assessing the followers of the target account.
 
 Users must gain Developer Access for their twitter account in order to
