@@ -21,7 +21,7 @@ import os, time
 import matplotlib.pyplot as plt
 
 # import uncommon libraries, you may need to install these
-import json, tweepy
+import tweepy
 from wordcloud import WordCloud
 from tweepy import OAuthHandler
 
