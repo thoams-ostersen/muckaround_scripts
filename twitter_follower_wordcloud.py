@@ -33,9 +33,10 @@ access_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'         # 45 cha
 auth = OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_secret)
 
-# define target account and number of most recent tweets to look at
+# define target account and number of followers
 account = 'your_twitter_handle' # twitter handle here (eg: 'nature' for @nature)
 max_followers = 100             # max number of followers to extract bios for
+
 # path to output directory
 outdir = r"D:\your_directory_of_choice\twitter_bio_wordclouds"
 
@@ -86,7 +87,7 @@ print '------------'
 wordcloud = WordCloud(background_color="white",
                       colormap='viridis',
                       height=600,
-                      width=1068,
+                      width=1080,
                       max_words=100)
 
 wordcloud.generate(" ".join(text))
@@ -103,8 +104,8 @@ wordcloud.to_file(outfn)
 
 # print some more details to console/terminal
 print 'Wordcloud saved to:  ', outname
-print 'File naming format:  ', 'wordcld_*account*_*datecode*_*timecode*'
-print '------------ JOB DONE ------------'
+print 'File naming format:  ', 'wordcld_*account*_*datecode*_*timecode*.png'
+print '------------ JOB DONE ( ͡° ͜ʖ ͡°) ------------'
 
 # open the wordcloud
 plt.show()
